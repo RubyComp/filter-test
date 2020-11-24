@@ -1,0 +1,167 @@
+/* Normalize: */
+
+@import-normalize;
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+fieldset,
+legend {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+label, input {
+	cursor: pointer;
+}
+label {
+	user-select: none;
+}
+
+/* Variables */
+
+:root {
+  --main-text-color: rgba(255, 255, 255, .77);
+  --main-text-size: 16px;
+}
+
+/* Main styles: */
+
+body {
+	background-color: #202021;
+	color: var(--main-text-color);
+	font-family: roboto, arial;
+	font-size: var(--main-text-size);
+	letter-spacing: 0.01em;
+	min-height: 106vh;
+}
+
+a {
+	color: var(--main-text-color);
+}
+
+h1 {
+	margin-bottom: .7em;
+}
+
+h2 {
+	margin-bottom: .6em;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 1080px;
+	min-width: 620px;
+	padding-top: 2em;
+}
+
+.container-with-aside {
+	display: grid;
+	grid-column-gap: 2em;
+	grid-template-columns: 1fr 220px;
+	padding: 0 1em;
+}
+
+/**/
+
+#result-list {
+	display: grid;
+	grid-gap: 2vw 1.4em;
+	grid-template-columns: repeat( auto-fit, minmax(220px, 250px) );
+	margin-bottom: 6em;
+}
+.result-item {
+	border: 1px solid #353535;
+}
+.result-item-image {
+	max-height: 120px;
+	max-width: 100%;
+}
+
+.result-item-image-container {
+	align-items: center;
+	background: rgb(255 255 255 / 10%);
+	display: flex;
+	justify-content: center;
+}
+
+.result-item-content {
+	padding: .82em .7em 1em 1em;
+}
+
+.result-item-title {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+.items-filters {
+	display: grid;
+	grid-gap: .88em;
+	grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+	margin-top: .88em;
+}
+
+.filter-title {
+	display: block;
+	margin-bottom: .07em;
+	opacity: .4;
+}
+
+#filters-list {
+	max-height: calc(100vh - 1em);
+	overflow-y: auto;
+	position: sticky;
+	top: 1em;
+}
+
+.filters-row {
+	margin-bottom: 1em;
+}
+
+.filter-label {
+	align-items: center;
+	display: inline-flex;
+	gap: 0.3em;
+	margin: .1em 0;
+}
+.filters-row legend {
+	border-bottom: 1px solid rgb(255, 255, 255, .17);
+	margin-bottom: .2em;
+	padding-bottom: .2em;
+	width: 100%;
+}
+.filters-row [type="checkbox"] {
+	opacity: .7;
+}
+
+.filter-any {
+	opacity: .5;
+}
+
+.mega-note {
+	line-height: 1.32em;
+	margin-top: 20vh;
+	text-align: center;
+}
+/**/

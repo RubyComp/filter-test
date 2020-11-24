@@ -56,7 +56,6 @@ export default class FiltersList extends Component {
 	}
 	render() {
 
-console.log(this.props.unique);
 		const { error, isLoaded, filters } = this.state;
 
 		if (error) {

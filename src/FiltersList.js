@@ -11,7 +11,6 @@ function FilterRow({filter, change}) {
 					return (
 						<li key={value.id}>
 							<label className="filter-label">
-								{/*<input type="checkbox" name="" id="" />*/}
 								<input type="checkbox" data_id={value.id} onChange={ (e) => change(e)} />
 								<span>{value.name}</span>
 							</label>

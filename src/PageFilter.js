@@ -15,7 +15,7 @@ export default class PageFilter extends Component {
 	}
 
 	componentDidMount() {
-		fetch('https://filter.test/?action=get_items')
+		fetch('https://rubycomp.site/?action=get_items')
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -61,7 +61,7 @@ export default class PageFilter extends Component {
 			filter = '&filters=' + filters.join(',');
 		}
 
-		fetch('https://filter.test/?action=get_items' + filter)
+		fetch('https://rubycomp.site/?action=get_items' + filter)
 			.then(res => res.json())
 			.then(
 				(result) => {

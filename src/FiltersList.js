@@ -36,7 +36,7 @@ export default class FiltersList extends Component {
 	}
 
 	componentDidMount() {
-		fetch('https://filter.test/?action=get_filters')
+		fetch('https://rubycomp.site/?action=get_filters')
 			.then(res => res.json())
 			.then(
 				(result) => {

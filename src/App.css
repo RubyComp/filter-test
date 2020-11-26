@@ -130,13 +130,13 @@ h2 {
 
 #filters-list {
 	max-height: calc(100vh - 1em);
-	overflow-y: auto;
 	position: sticky;
-	top: 1em;
 }
 
 .filters-row {
+	overflow-y: auto;
 	margin-bottom: 1em;
+	top: 1em;
 }
 
 .filter-label {
